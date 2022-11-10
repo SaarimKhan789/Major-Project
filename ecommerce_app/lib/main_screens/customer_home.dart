@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/main_screens/category.dart';
 import 'package:ecommerce_app/main_screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   int _selectedIndex = 0;
   final List<Widget> _tabs = [
     HomeScreen(),
-    Center(child: Text('Category screen')),
+    CategoryScreen(),
     Center(child: Text('Stores screen')),
     Center(child: Text('Cart screen')),
     Center(child: Text('Profile screen')),
