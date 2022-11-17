@@ -1,5 +1,7 @@
+import 'package:ecommerce_app/main_screens/cart.dart';
 import 'package:ecommerce_app/main_screens/category.dart';
 import 'package:ecommerce_app/main_screens/home.dart';
+import 'package:ecommerce_app/main_screens/stores.dart';
 import 'package:flutter/material.dart';
 
 class CustomerHomeScreen extends StatefulWidget {
@@ -14,8 +16,8 @@ class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   final List<Widget> _tabs = [
     HomeScreen(),
     CategoryScreen(),
-    Center(child: Text('Stores screen')),
-    Center(child: Text('Cart screen')),
+    StoresScreen(),
+    CartScreen(),
     Center(child: Text('Profile screen')),
   ];
   @override
