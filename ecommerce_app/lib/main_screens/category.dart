@@ -1,6 +1,14 @@
-import 'dart:convert';
-
+import 'package:ecommerce_app/categories/accessories_category.dart';
+import 'package:ecommerce_app/categories/bags_category.dart';
+import 'package:ecommerce_app/categories/beauty_category.dart';
+import 'package:ecommerce_app/categories/electronics_category.dart';
+import 'package:ecommerce_app/categories/homegarden_category.dart';
+import 'package:ecommerce_app/categories/kids_category.dart';
+import 'package:ecommerce_app/categories/men_category.dart';
+import 'package:ecommerce_app/categories/shoes_category.dart';
+import 'package:ecommerce_app/categories/women_categ.dart';
 import 'package:ecommerce_app/main_screens/home.dart';
+import 'package:ecommerce_app/utilities/categ_list.dart';
 import 'package:flutter/material.dart';
 
 List<ItemData> items = [
@@ -98,15 +106,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
         },
         scrollDirection: Axis.vertical,
         children: const [
-          Center(child: Text('men category')),
-          Center(child: Text('women category')),
-          Center(child: Text('shoes category')),
-          Center(child: Text('bags category')),
-          Center(child: Text('electronics category')),
-          Center(child: Text('accessories category')),
-          Center(child: Text('home and garden category')),
-          Center(child: Text('kids category')),
-          Center(child: Text('beauty category')),
+          MenCategory(),
+          WomenCategory(),
+          ShoesCategory(),
+          BagsCategory(),
+          ElectronicsCategory(),
+          AccessoriesCategory(),
+          HomeGardenCategory(),
+          KidsCategory(),
+          BeautyCategory(),
         ],
       ),
     );
