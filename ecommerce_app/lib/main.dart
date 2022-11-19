@@ -1,4 +1,6 @@
 import 'package:ecommerce_app/main_screens/customer_home.dart';
+import 'package:ecommerce_app/main_screens/supplier_home.dart';
+import 'package:ecommerce_app/main_screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

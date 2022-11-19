@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/main_screens/cart.dart';
 import 'package:ecommerce_app/main_screens/category.dart';
+import 'package:ecommerce_app/main_screens/dashboard.dart';
 import 'package:ecommerce_app/main_screens/home.dart';
 import 'package:ecommerce_app/main_screens/profile.dart';
 import 'package:ecommerce_app/main_screens/stores.dart';
@@ -18,7 +19,7 @@ class _SupplierHomeScreenState extends State<SupplierHomeScreen> {
     HomeScreen(),
     CategoryScreen(),
     StoresScreen(),
-    Center(child: Text('Dashboard'),),
+    DashboardScreen(),
     Center(child: Text('Upload'),)
   ];
   @override

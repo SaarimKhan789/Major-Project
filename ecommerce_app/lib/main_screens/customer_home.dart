@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/main_screens/cart.dart';
 import 'package:ecommerce_app/main_screens/category.dart';
 import 'package:ecommerce_app/main_screens/home.dart';
+import 'package:ecommerce_app/main_screens/profile.dart';
 import 'package:ecommerce_app/main_screens/stores.dart';
 import 'package:flutter/material.dart';
 
@@ -13,12 +14,12 @@ class CustomerHomeScreen extends StatefulWidget {
 
 class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   int _selectedIndex = 0;
-  final List<Widget> _tabs = [
+  final List<Widget> _tabs = const [
     HomeScreen(),
     CategoryScreen(),
     StoresScreen(),
     CartScreen(),
-    Center(child: Text('Profile screen')),
+    ProfileScreen()
   ];
   @override
   Widget build(BuildContext context) {
